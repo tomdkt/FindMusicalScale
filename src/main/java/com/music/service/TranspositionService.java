@@ -10,7 +10,6 @@ public class TranspositionService {
     }
 
     public Note transposeNote(Note originalNote, int interval, boolean useFlats) {
-        // Use modulo to wrap around the 12-tone scale
         int newValue = (originalNote.getValue() + interval + 12) % 12;
         return MusicTheory.getNoteByValue(newValue, useFlats);
     }

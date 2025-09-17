@@ -7,7 +7,6 @@ import com.music.domain.Note;
 import com.music.service.MusicTheory;
 
 public class ChordParser {
-    // Regex to capture root note, quality, and optional bass note.
     private static final Pattern CHORD_PATTERN = Pattern.compile("([A-G][#b]?)([^/]*)(?:/([A-G][#b]?))?");
 
     public Chord parse(String chordString) {
